@@ -1,3 +1,12 @@
+The purpose of c.py is to be able to quickly test C source code without
+having to make an executable and run it in the command line.
+
+With Python - you can change the path, compile the source code, run it
+and delete the executable all in one shot.
+
+Usage...
+python c.py main.c -e // calls main.c in the Env directory
+
 So far we have implemented a Python script to execute a C file with the gcc compiler.
 
 We have added flags for:

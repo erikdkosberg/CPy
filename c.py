@@ -24,15 +24,17 @@ class Reader:
 	# To check whether additional flags were specified
 	def flags(self, flag):
 		if flag == "s": # Now the scripts used are in /Scripts
-			os.chdir("../C/Scripts/")
+			os.chdir("Scripts/")
 			self.scripts = os.listdir()
 		elif flag == "t": # Custom path
 			os.chdir(input("Please enter desired path...\n"))
 			self.scripts = os.listdir()
 		elif flag == "c": # Concept path
-			os.chdir("../C/Ref/Concepts/")
+			os.chdir("Ref/Concepts/")
 			self.scripts = os.listdir()
-
+		elif flag == "e": # Env path
+			os.chdir("Env/")
+			self.scripts = os.listdir()
 		elif flag == "S": # Server path
 			os.chdir("../C/Server/")
 			self.scripts = os.listdir()
