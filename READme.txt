@@ -19,6 +19,8 @@ We have added flags for:
 	-s
 	-->sets path to the Scripts directory
 
+	-a
+	-->sets path to the Env directory
 TODO:
 	::
 	modify arg parsing logic to handle exclusive and multiple arguments
